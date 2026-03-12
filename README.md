@@ -1,5 +1,5 @@
 # Enterprise-Grade-IAM-Architecture-Multi-Account-Setup
-# Introduction
+# Overview
 
 This project defines the **Enterprise-Grade Identity and Access Management (IAM) Architecture** for a secure, scalable, and compliant multi-account cloud environment built on **Amazon Web Services** using **AWS Organizations**.
 
@@ -8,6 +8,9 @@ The architecture is designed for a company operating multiple environments (**De
 Access is fully **role-based**, with **no direct user permissions**. All users authenticate centrally and gain access only through **secure cross-account role assumption**, protected by **MFA**, **permission boundaries**, and **organization-wide policies (SCPs)**.
 
 This model provides enterprise-level governance, auditability, and scalability while minimizing security risk and operational complexity.
+
+## Architecture
+
 
 ## Objectives
 
