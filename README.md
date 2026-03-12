@@ -66,7 +66,7 @@ This architecture uses the following core security and governance components:
     - Boundary layer
     - SCP layer
     - MFA layer
-    - Audit layer
+    
       ---
 
 ## Architecture Overview
