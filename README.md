@@ -154,7 +154,7 @@ This structure is suitable for:
 
 ---
  ### Phase 1 - Establish Multi-Account Structure
-Objective - Create isolated environments for security, governance, and blast-radius containment.
+Create isolated environments for security, governance, and blast-radius containment.
 
----
 ### Phase 2 - Centralize Identity Management
+Manage all IAM users in the Management Account only with the **Dangerous Actions Policy**
