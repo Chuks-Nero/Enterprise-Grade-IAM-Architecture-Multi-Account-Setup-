@@ -10,6 +10,9 @@ Access is fully **role-based**, with **no direct user permissions**. All users a
 This model provides enterprise-level governance, auditability, and scalability while minimizing security risk and operational complexity.
 
 ## Architecture
+The following diagram illustrates the enterprise IAM multi-account design.
+
+![Architecture Diagram](architecture/architecture-diagram.png)
 
 
 ## Objectives
