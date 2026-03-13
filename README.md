@@ -150,11 +150,31 @@ This structure is suitable for:
 
 ---
 
-# Implementation process
+# Project Evidence
 
 ---
- ### Phase 1 - Establish Multi-Account Structure
-Create isolated environments for security, governance, and blast-radius containment.
+ ### Phase 1 - Multi-Account Structure
+Isolated environments for security, governance, and blast-radius containment structured with **AWS Organization**
 
 ### Phase 2 - Centralize Identity Management
-Manage all IAM users in the Management Account only with the **Dangerous Actions Policy**
+Manage all identities in a single control account using **AWS IAM**
+
+### Phase 3 - Least Privilege enforcement With **Service Control Policy (SCP)**
+Creation of IAM, Organization management etc blocked for organizational accounts. 
+
+### Phase 4 - Permission Isolation,Role-only access architecture and clean RBAC model
+Role assumption by the IAM user
+
+### Phase 5 - MFA enforcement for cross-acount access
+Zero trust access path, fails to switch without mfa
+
+### Phase 6 - Access segmentation, Environmental seperation and least Privilege routing
+| IAM Groups | Allowed Roles |
+|------------|---------------|
+| DevOps | Dev + Staging + Prod roles |
+| Security | All roles |
+| Finance | Prod-Finance Role only |
+
+ DevOps user can assume roles in Dev, Staging and Prod and only those roles using the role-based access model
+
+ 
