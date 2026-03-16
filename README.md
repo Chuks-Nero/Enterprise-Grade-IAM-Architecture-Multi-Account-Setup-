@@ -155,11 +155,11 @@ This structure is suitable for:
  ### Phase 1 - Multi-Account Structure
 Isolated environments for security, governance, and blast-radius containment structured with **AWS Organization**
 
-### Organization Structure 1
+#### Organization Structure 1
 
 ![Organization Structure](projectimages/Organization%20Structure%201.png)
  
-### Organization Structure 2
+#### Organization Structure 2
 
 ![Organization Structure](projectimages/Organization%20Structure%202.png)
 
@@ -167,16 +167,40 @@ Isolated environments for security, governance, and blast-radius containment str
 ### Phase 2 - Centralize Identity Management
 Manage all identities in a single control account using **AWS IAM**
 
+#### Centralize Identity Management
+
+![IAM User](projectimages/IAM%20User%20.png)
 
 ---
 ### Phase 3 - Least Privilege enforcement With **Service Control Policy (SCP)**
 Creation of IAM, Organization management etc blocked for organizational accounts. 
 
+#### Least Privilege
+
+![Least privilege](projectimages/Least%20privilege.png)
+
+---
 ### Phase 4 - Permission Isolation,Role-only access architecture and clean RBAC model
 Role assumption by the IAM user
 
+#### Role Assumption
+
+![Switch Role](projectimages/Switch%20Role.png)
+
+---
+
 ### Phase 5 - MFA enforcement for cross-acount access
 Zero trust access path, fails to switch without mfa
+
+#### MFA Enforced
+
+![MFA Enforced](projectimages/With%20MFA%20Access.png)
+
+#### MFA not Enforced
+
+![MFA Not Enforced](projectimages/Without%20MFA%20Access.png)
+
+---
 
 ### Phase 6 - Access segmentation, Environmental seperation and least Privilege routing
 | IAM Groups | Allowed Roles |
@@ -186,5 +210,9 @@ Zero trust access path, fails to switch without mfa
 | Finance | Prod-Finance Role only |
 
  DevOps user can assume roles in Dev, Staging and Prod and only those roles using the role-based access model
+
+#### Access Segmentation
+
+![Devops Role](projectimages/Devops%20Role%20Assumption.png)
 
  
