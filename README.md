@@ -156,6 +156,9 @@ This structure is suitable for:
  ### Phase 1 - Multi-Account Structure
 Isolated environments for security, governance, and blast-radius containment structured with **AWS Organization**
 
+![Organization Structure 1](projectimages/Organization Structure 1.png)
+ 
+
 ### Phase 2 - Centralize Identity Management
 Manage all identities in a single control account using **AWS IAM**
 
