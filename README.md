@@ -152,16 +152,23 @@ This structure is suitable for:
 
 # Project Evidence
 
----
  ### Phase 1 - Multi-Account Structure
 Isolated environments for security, governance, and blast-radius containment structured with **AWS Organization**
 
-![Organization Structure 1](projectimages/organization-structure-1.png)
- 
+### Organization Structure 1
 
+![Organization Structure](projectimages/Organization%20Structure%201.png)
+ 
+### Organization Structure 2
+
+![Organization Structure](projectimages/Organization%20Structure%202.png)
+
+---
 ### Phase 2 - Centralize Identity Management
 Manage all identities in a single control account using **AWS IAM**
 
+
+---
 ### Phase 3 - Least Privilege enforcement With **Service Control Policy (SCP)**
 Creation of IAM, Organization management etc blocked for organizational accounts. 
 
