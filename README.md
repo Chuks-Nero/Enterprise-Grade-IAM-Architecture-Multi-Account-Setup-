@@ -215,4 +215,26 @@ Zero trust access path, fails to switch without mfa
 
 ![Devops Role](projectimages/Devops%20Role%20Assumption.png)
 
+---
+
+ ### Access Flow Architecture
  
+User  
+↓  
+Central Identity (Management Account)  
+↓  
+IAM Group (Access Routing)  
+↓  
+AssumeRole Policy  
+↓  
+Cross-Account Role  
+↓  
+Trust Policy + MFA  
+↓  
+Permission Boundary  
+↓  
+Role Policy  
+↓  
+SCP Evaluation  
+↓  
+Service Access  
